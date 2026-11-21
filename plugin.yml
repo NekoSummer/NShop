@@ -6,7 +6,7 @@ depend: [Vault]
 description: 简易商店
 
 commands:
-  shop:
+  nshop:
     description: 打开商店
     usage: /<command>
     permission: nshop.use
