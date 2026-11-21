@@ -11,6 +11,10 @@
         <delete dir="${dist-dir}"/>
     </target>
 
+    <target name="clean-class">
+        <delete dir="${class-dir}"/>
+    </target>
+
     <target name="init" description="添加依赖">
         <mkdir dir="${lib-dir}"/>
         <mkdir dir="${class-dir}"/>
@@ -42,6 +46,6 @@
         </jar>
     </target>
 
-    <target name="all" depends="clean, init, jar" description="一件完成" />
-
+    <target name="all" depends="clean, init, jar" description="一件完成"/>
+    <target name="run-test" depends="clean-class, jar" description="测试"/>
 </project>
