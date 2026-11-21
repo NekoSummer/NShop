@@ -11,8 +11,17 @@
 #       - "&7点击购买"
 
 items:
+  diamond:
+    slot: 0
+    mate: DIAMOND
+    amount: 5
+    price: 10000.0
+    name: "&b钻石 x5"
+    lore:
+      - "&e价格: 10000 铜板"
+      - "&7点击购买"
   apple:
-    slot: 4
+    slot: 1
     mate: APPLE
     amount: 5
     price: 50.0
