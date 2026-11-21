@@ -17,7 +17,6 @@
 
     <target name="init" description="添加依赖">
         <mkdir dir="${lib-dir}"/>
-        <mkdir dir="${class-dir}"/>
 
         <get src="https://getbukkit.org/craftbukkit/craftbukkit-1.13.jar"
                 dest="${lib-dir}/bukkit.jar"
@@ -28,6 +27,7 @@
     </target>
 
     <target name="compile" description="构建">
+        <mkdir dir="${class-dir}"/>
         <javac srcdir="${src-dir}" destdir="${class-dir}" includeantruntime="false"
                release="8" encoding="UTF-8">
             <classpath>
