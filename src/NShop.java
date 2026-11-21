@@ -29,6 +29,7 @@ public class NShop extends JavaPlugin {
             return;
         }
 
+        saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new NShopListen(this, economy), this);
         getLogger().info("NShop插件已加载");
     }
