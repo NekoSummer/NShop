@@ -1,0 +1,22 @@
+# 示范
+# items:
+#   diamond:
+#     slot: 0
+#     material: DIAMOND
+#     amount: 1
+#     price: 100.0
+#     name: "&b钻石"
+#     lore:
+#       - "&e价格: 100 铜板"
+#       - "&7点击购买"
+
+items:
+  apple:
+    slot: 4
+    material: APPLE
+    amount: 5
+    price: 50.0
+    name: "&c苹果 x5"
+    lore:
+      - "&e价格: 50 铜板"
+      - "&7点击购买"

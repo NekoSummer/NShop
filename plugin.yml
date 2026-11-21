@@ -1,0 +1,6 @@
+name: NShop
+main: NShop
+api-version: 1.13
+version: 1.0.0
+depend: [Vault]
+description: 简易商店
