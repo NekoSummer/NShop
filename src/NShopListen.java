@@ -49,11 +49,14 @@ public class NShopListen implements Listener {
             int confSlot = plugin.getConfig().getInt(path + "slot");
 
             if (confSlot == rawSlot) {
+
                 double price = plugin.getConfig().getDouble(path + "price");
-                String mateName = plugin.getConfig().getString(path + "material", "STONE");
+                String mateName = plugin.getConfig().getString(path + "mate", "STONE");
+
+                plugin.getLogger().info("购买商品key:"+key+" | path:"+path+" | material读取值:"+mateName);
+
                 int amount = plugin.getConfig().getInt(path + "amount", 1);
                 Material mate = Material.matchMaterial(mateName);
-
                 if (mate == null) {
                     break; // 材质无效，跳出循环，不要return
                 }

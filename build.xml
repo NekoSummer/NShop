@@ -5,7 +5,7 @@
     <property name="lib-dir" location="${dist-dir}/libraries"/>
     <property name="class-dir" location="${dist-dir}/classes"/>
 
-    <property name="version" value="1.0.0"/>
+    <property name="version" value="1.0.2"/>
 
     <target name="clean">
         <delete dir="${dist-dir}"/>
