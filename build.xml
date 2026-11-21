@@ -16,7 +16,6 @@
         <mkdir dir="${class-dir}"/>
 
         <get src="https://getbukkit.org/craftbukkit/craftbukkit-1.13.jar" dest="${lib-dir}/bukkit.jar"/>
-        <get src="https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.22.1-dev+28-f8724e2.jar" dest="${lib-dir}/EssentialsX.jar"/>
         <get src="https://github.com/MilkBowl/Vault/releases/download/1.7.3/Vault.jar" dest="${lib-dir}/Vault.jar"/>
     </target>
 
