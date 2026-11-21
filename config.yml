@@ -2,7 +2,7 @@
 # items:
 #   diamond:
 #     slot: 0
-#     material: DIAMOND
+#     mate: DIAMOND
 #     amount: 1
 #     price: 100.0
 #     name: "&b钻石"
@@ -13,7 +13,7 @@
 items:
   apple:
     slot: 4
-    material: APPLE
+    mate: APPLE
     amount: 5
     price: 50.0
     name: "&c苹果 x5"

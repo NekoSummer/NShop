@@ -54,7 +54,7 @@ public class NShop extends JavaPlugin {
 
         Player player = (Player) sender;
 
-        Inventory gui = Bukkit.createInventory(null, 9, menuTitle);
+        Inventory gui = Bukkit.createInventory(null, 54, menuTitle);
 
         ConfigurationSection itemsSection = getConfig().getConfigurationSection("items");
         if (itemsSection == null)
