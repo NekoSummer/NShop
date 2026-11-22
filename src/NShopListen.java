@@ -52,12 +52,13 @@ public class NShopListen implements Listener {
 
                 double price = plugin.getConfig().getDouble(path + "price");
                 String mateName = plugin.getConfig().getString(path + "mate", "STONE");
-
-                plugin.getLogger().info("购买商品key:"+key+" | path:"+path+" | material读取值:"+mateName);
-
-                int amount = plugin.getConfig().getInt(path + "amount", 1);
+                if (mateName != null) mateName = mateName.toUpperCase();
                 Material mate = Material.matchMaterial(mateName);
+                plugin.getLogger().info("购买商品key:"+key+" | path:"+path+" | material读取值:"+mateName);
+                int amount = plugin.getConfig().getInt(path + "amount", 1);
+
                 if (mate == null) {
+                    plugin.getLogger().warning("材质 ["+mateName+"] 无效！");
                     break; // 材质无效，跳出循环，不要return
                 }
 
